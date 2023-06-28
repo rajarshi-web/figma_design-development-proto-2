@@ -1,0 +1,762 @@
+body{
+    padding:0;
+    margin:0;
+    background:#F5F5F5
+}
+html{
+    font-size:62.5%;
+    overflow-x:hidden;
+    scroll-behavior:smooth;
+    scroll-padding-top:6.5rem
+}
+h3{
+    font-size:56px;
+    font-weight:600;
+    letter-spacing:1px;
+    color:#012245
+}
+section{
+    margin-top:15px;
+    margin-bottom:30px
+}
+@font-face{
+    font-family:'poppinsregular';
+    src:url(../fonts/poppins-regular-webfont.woff2) format("woff2"),url(../fonts/poppins-regular-webfont.woff) format("woff");
+    font-weight:400;
+    font-style:normal
+}
+@font-face{
+    font-family:'bethany_kibangregular';
+    src:url(../fonts/bethanykibang-webfont.woff2) format("woff2"),url(../fonts/bethanykibang-webfont.woff) format("woff");
+    font-weight:400;
+    font-style:normal
+}
+@font-face{
+    font-family:'bell_mtbold';
+    src:url(../fonts/bell_mt_fett-webfont.woff2) format("woff2"),url(../fonts/bell_mt_fett-webfont.woff) format("woff");
+    font-weight:400;
+    font-style:normal
+}
+@font-face{
+    font-family:'Bell MT';
+    src:url(../fonts/Bell-MT.eot);
+    src:url(../fonts/Bell-MT.eot?#iefix) format("embedded-opentype"),url(../fonts/Bell-MT.woff2) format("woff2"),url(../fonts/Bell-MT.woff) format("woff"),url(../fonts/Bell-MT.ttf) format("truetype"),url('../fonts/Bell-MT.svg#Bell MT') format("svg")
+}
+.navbar{
+    background-color:transparent!important
+}
+.navbar .navbar-nav .nav-link{
+    color:#000;
+    font-size:18px;
+    padding-left:5rem;
+    padding-right:5rem
+}
+.navbar .navbar-nav .nav-link:hover{
+    color:#dd6226
+}
+.navbar-logo-centered .navbar-nav .nav-link{
+    padding:3rem
+}
+.logo1{
+    display:none
+}
+.logo{
+    padding-left:8rem;
+    padding-right:8rem
+}
+.btn{
+    color:#FFF;
+    background:#000;
+    line-height:2;
+    height:46px;
+    width:84px;
+    font-size:18px;
+    font-weight:400;
+    border-radius:10px
+}
+.btn:hover{
+    color:#FFF;
+    background:#dd6226;
+    transition:.6s
+}
+.bannertext{
+    padding-top:120px
+}
+.bannertext h3{
+    font-size:36px;
+    font-weight:600;
+    font-family:'bethany_kibangregular';
+    color:#FB6B6C
+}
+.bannertext h4{
+    font-size:64px;
+    font-weight:600;
+    font-family:'Bell MT';
+    color:#000
+}
+.bannertext p{
+    font-size:18px;
+    font-weight:400;
+    color:#000;
+    font-family:'poppinsregular';
+    padding-top:27px
+}
+.banner_btn{
+    padding-top:59px;
+    padding-right:14px
+}
+.banner_btn .get{
+    padding:11px 34px;
+    text-decoration:none;
+    color:#FFFF;
+    background:#000;
+    font-size:18px;
+    font-weight:500;
+    font-family:'poppinsregular';
+    border-radius:10px;
+    margin-right:21px;
+    transition:.6s
+}
+.banner_btn .get:hover{
+    background:#dd6226
+}
+.banner_btn .play{
+    text-decoration:none;
+    color:#000;
+    font-size:18px;
+    line-height:2
+}
+.banner_btn .play i{
+    font-size:18px;
+    font-weight:400;
+    background:#FFF;
+    height:72px;
+    width:65px;
+    border-radius:50%;
+    padding:26px;
+    margin-right:15px;
+    color:#dd6226;
+    box-shadow:0 10px 20px 4px rgba(0,0,0,0.1)
+}
+.banner_btn .play:hover{
+    color:#dd6226;
+    padding-right:10px;
+    font-weight:600;
+    transition:.5s
+}
+.banner_btn .play:hover i{
+    color:#FFF;
+    rotate:360deg;
+    transition:.5s;
+    background:#dd6226
+}
+#dd6226 #000 .banimg{
+    padding-left:50px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background-color:rgba(187,254,255,0.1);
+    border-radius:50%;
+    box-shadow:3px 14px 3px 4px rgba(187,254,255,0.1)
+}
+.whitelight{
+    background:#FFF;
+    box-shadow:0 10px 20px 4px rgba(0,0,0,0.1);
+    border-radius:20px;
+    padding:32px
+}
+.whitelight h3{
+    font-size:36px;
+    font-weight:400;
+    color:#000;
+    font-family:'poppinsregular'
+}
+.business{
+    display:flex
+}
+.business .tyt{
+    padding-right:20px;
+    padding-left:20px
+}
+.business .tyt .imgser{
+    display:flex;
+    align-items:center;
+    justify-content:center
+}
+.business .tyt .textser{
+    padding-top:12px
+}
+.business .tyt .textser h4{
+    font-size:24px;
+    font-weight:400;
+    color:#000;
+    font-family:'poppinsregular'
+}
+.business .tyt .textser a{
+    font-size:24px;
+    font-weight:400;
+    color:#000;
+    font-family:'poppinsregular';
+    text-decoration:none
+}
+.business .tyt .textser a:hover h4{
+    font-size:24px;
+    font-weight:400;
+    color:#dd6226;
+    font-family:'poppinsregular';
+    text-decoration:none;
+    transition:.5s
+}
+.textimg{
+    position:absolute;
+    left:0;
+    transform:translateX(169%);
+    overflow:hidden
+}
+.line{
+    padding-right:10px
+}
+.course .texthead{
+    padding-top:12px
+}
+.course .texthead h4{
+    font-size:36px;
+    font-weight:600;
+    font-family:'bethany_kibangregular';
+    color:#FB6B6C
+}
+.course .texthead h3{
+    font-size:64px;
+    font-family:'Bell MT';
+    color:#000;
+    margin-bottom:20px
+}
+.main{
+    position:relative;
+    width:100%;
+    margin-top:20px
+}
+.image{
+    display:block;
+    width:100%;
+    height:auto
+}
+.overlay{
+    position:absolute;
+    bottom:0;
+    left:100%;
+    right:0;
+    background:linear-gradient(180deg,rgba(217,217,217,0) 0%,#001C34 100%);
+    overflow:hidden;
+    width:0;
+    height:100%;
+    transition:.5s ease;
+    display:flex;
+    align-items:flex-end
+}
+.main:hover .overlay{
+    width:100%;
+    left:0
+}
+.text{
+    color:#fff;
+    width:100%;
+    font-size:20px;
+    white-space:nowrap;
+    padding:20px
+}
+.text h3{
+    font-size:24px;
+    font-weight:600;
+    color:#FFF;
+    font-family:'bell_mtbold'
+}
+.vtn{
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between
+}
+.vtn .stars{
+    display:flex;
+    color:#FFC700;
+    font-size:20px
+}
+.vtn .stars .start{
+    padding-right:12px
+}
+.vtn .dollar{
+    background:#FFC700;
+    color:#FFF;
+    font-size:20px
+}
+.vtn .dollar a{
+    color:#001C34;
+    text-decoration:none;
+    padding:15px;
+    font-size:18px;
+    font-weight:600
+}
+.vtn .dollar:hover{
+    background:#FFF;
+    transition:.5s
+}
+.aboutimg{
+    padding-left:20px
+}
+.abouttext{
+    margin-top:103px
+}
+.abouttext h3{
+    font-size:36px;
+    font-weight:600;
+    font-family:'bethany_kibangregular';
+    color:#FB6B6C
+}
+.abouttext h4{
+    font-size:64px;
+    font-family:'Bell MT';
+    font-weight:600;
+    color:#000;
+    margin-bottom:20px;
+    line-height:65px
+}
+.abouttext p{
+    color:#111011;
+    font-size:18px;
+    font-weight:600;
+    font-family:'poppinsregular'
+}
+.misvis{
+    margin-top:30px
+}
+.misvis .btnb{
+    min-width:40%;
+    margin-bottom:27px
+}
+.misvis .btnb .btnb-vis{
+    background:#FFFF;
+    min-width:100%;
+    box-shadow:0 10px 20px 4px rgba(0,0,0,0.1);
+    border-radius:20px;
+    display:block;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    height:100px
+}
+.misvis .btnb .btnb-vis-1{
+    background:#FFFF;
+    min-width:100%;
+    box-shadow:0 10px 20px 4px rgba(0,0,0,0.1);
+    border-radius:20px;
+    display:block;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    height:100px
+}
+.misvis .btnb .btnb-vis:hover{
+    background:linear-gradient(180deg,rgba(217,217,217,0) 0%,rgba(182,227,228,1) 100%);
+    border-bottom:5px solid #000;
+    transition:.6s
+}
+.misvis .btnb .btnb-vis-1:hover{
+    background:linear-gradient(180deg,rgba(217,217,217,0) 0%,rgba(182,227,228,1) 100%);
+    border-bottom:5px solid #000;
+    transition:.6s
+}
+.btnb a{
+    text-decoration:none;
+    color:#000;
+    font-size:18px;
+    font-weight:600
+}
+.btnb a img{
+    padding-right:10px
+}
+.banner_btn1{
+    padding-top:0;
+    padding-right:14px
+}
+.banner_btn1 .get{
+    padding:11px 34px;
+    text-decoration:none;
+    color:#FFFF;
+    background:#000;
+    font-size:18px;
+    font-weight:500;
+    font-family:'poppinsregular';
+    border-radius:10px;
+    margin-right:21px;
+    transition:.6s
+}
+.banner_btn1 .get:hover{
+    background:#dd6226
+}
+.qnatext{
+    padding-top:14px;
+    text-align:center
+}
+.qnatext h3{
+    font-size:36px;
+    font-weight:600;
+    font-family:'bethany_kibangregular';
+    color:#FB6B6C
+}
+.qnatext h4{
+    font-size:64px;
+    font-family:'Bell MT';
+    font-weight:600;
+    color:#000;
+    margin-bottom:20px
+}
+.testitext{
+    margin-top:134px
+}
+.testitext h4{
+    font-size:36px;
+    font-weight:600;
+    font-family:'bethany_kibangregular';
+    color:#FB6B6C
+}
+.testitext h3{
+    font-size:64px;
+    font-family:'Bell MT';
+    font-weight:600;
+    color:#000;
+    margin-bottom:20px
+}
+.testitext-1 h5{
+    font-size:18px;
+    font-size:400;
+    color:#001C34;
+    font-family:'poppinsregular';
+    line-height:27px;
+    margin-top:15px
+}
+.testitext-1 h4{
+    font-size:18px;
+    font-size:500;
+    color:#001C34;
+    font-family:'poppinsregular';
+    padding-top:14px
+}
+.testitext-1 p{
+    font-size:14px;
+    font-size:400;
+    color:#001C34;
+    font-family:'poppinsregular';
+    padding-top:14px
+}
+.slick-slider .main{
+    display:block;
+    padding:25px;
+    border-radius:20px
+}
+.slick-slider .main .imgtest{
+    display:flex;
+    align-items:center;
+    justify-content:center
+}
+.slick-slider .main .imgtest img{
+    border:4px solid #FB6B6C;
+    border-radius:50%
+}
+.owl-carousel .owl-nav button.owl-next{
+    display:visible!important
+}
+.footer{
+    padding-bottom:54px;
+    padding-top:71px
+}
+.footer .aboutus{
+    padding-top:11px;
+    padding-bottom:40px
+}
+.footer .aboutus p{
+    font-size:18px;
+    font-weight:400;
+    color:#001C34
+}
+.menuc{
+    padding-top:10px;
+    padding-bottom:18px
+}
+.menuc .textmenu h4{
+    color:#001C34;
+    font-size:18px;
+    font-weight:600;
+    padding-left:15px
+}
+.menuc .textmenu ul li{
+    padding-top:14px;
+    list-style:none
+}
+.menuc .textmenu ul li a{
+    color:#001C34;
+    font-size:18px;
+    font-weight:400;
+    text-decoration:none
+}
+.menuc .textmenu ul li a:hover{
+    color:#22c1c3;
+    text-shadow:2px 4px 4px #22c1c3;
+    transition:.6s
+}
+.menuc input{
+    background:#F0F0F0;
+    border:none;
+    color:#B8B8B8;
+    font-size:18px;
+    font-weight:600;
+    padding:21px;
+    border-radius:.5px;
+    margin-top:21px
+}
+.menuc input[type=submit]{
+    margin-top:20px;
+    background:#000;
+    color:#FFFF;
+    font-size:18px;
+    font-weight:400;
+    transition:.5s;
+    padding-left:60px;
+    border-radius:10px;
+    padding-right:60px;
+    box-shadow:0 4px 4px rgba(0,0,0,0.25)
+}
+.menuc input[type=submit]:hover{
+    margin-top:20px;
+    background:#dd6226;
+    color:#FFFF;
+    font-size:18px;
+    font-weight:400
+}
+.line2{
+    border:1px solid #001;
+    margin-top:14px
+}
+.line2 img{
+    width:100%
+}
+.termscondi{
+    display:flex;
+    justify-content:space-between
+}
+.termscondi a{
+    font-size:18px;
+    font-weight:600;
+    color:#001C34;
+    text-decoration:none
+}
+@media(max-width: 1401px){
+    .line{
+        display:none
+    }
+    .text{
+        color:#fff;
+        font-size:20px;
+        position:absolute;
+        top:60%;
+        left:50%;
+        -webkit-transform:translate(-100%,-50%);
+        -ms-transform:translate(-100%,-50%);
+        transform:translate(-85%,50%);
+        white-space:nowrap
+    }
+    .text h3{
+        font-size:20px;
+        font-weight:600;
+        color:#FFF;
+        font-family:'bell_mtbold'
+    }
+    .navbar .navbar-nav .nav-link{
+        padding-left:3rem;
+        padding-right:3rem
+    }
+}
+@media(max-width: 1201px){
+    .line{
+        display:none
+    }
+    .navbar .navbar-nav .nav-link{
+        padding-left:1.2rem;
+        padding-right:1.2rem
+    }
+    .text{
+        color:#fff;
+        font-size:20px;
+        position:absolute;
+        top:38%;
+        left:86%;
+        -webkit-transform:translate(-100%,-50%);
+        -ms-transform:translate(-100%,-50%);
+        transform:translate(-85%,50%);
+        white-space:nowrap
+    }
+    .text h3{
+        font-size:14px;
+        font-weight:600;
+        color:#FFF;
+        font-family:'bell_mtbold'
+    }
+}
+@media(max-width: 997px){
+    .textimg{
+        display:none
+    }
+    .navbar .navbar-nav .nav-link{
+        padding-left:1rem;
+        padding-right:1rem
+    }
+    .misvis .btnb .btnb-vis{
+        background:#FFFF;
+        padding:20px 10px;
+        min-width:100%;
+        box-shadow:0 10px 20px 4px rgba(0,0,0,0.1);
+        border-radius:20px
+    }
+    .banner_btn .play{
+        padding:0;
+        text-decoration:none;
+        color:#000;
+        font-size:8px;
+        line-height:2
+    }
+    .banner_btn .play i{
+        font-size:14px;
+        height:69px;
+        width:60px;
+        border-radius:50%
+    }
+    .misvis .btnb .btnb-vis-1{
+        background:#FFFF;
+        padding:20px 10px;
+        min-width:100%;
+        box-shadow:0 10px 20px 4px rgba(0,0,0,0.1);
+        border-radius:20px
+    }
+    .line2{
+        margin-top:24px
+    }
+    .business .tyt .textser h4{
+        border-bottom:5px solid #0001;
+        border-width:1px
+    }
+}
+.btnb a img{
+    padding-right:0
+}
+.banner_btn .play{
+    padding:0;
+    text-decoration:none;
+    color:#000;
+    font-size:12px;
+    line-height:2
+}
+.banner_btn .play i{
+    font-size:14px;
+    height:64px;
+    width:60px;
+    border-radius:50%;
+    margin-bottom:20px
+}
+@media(max-width: 991px){
+    .logo{
+        padding-left:1rem;
+        padding-right:1rem;
+        display:none
+    }
+    .logo1{
+        display:block
+    }
+}
+@media(max-width: 756px){
+    .text{
+        color:#fff;
+        font-size:20px;
+        position:absolute;
+        top:60%;
+        left:85%;
+        -webkit-transform:translate(-100%,-50%);
+        -ms-transform:translate(-100%,-50%);
+        transform:translate(-85%,50%);
+        white-space:nowrap
+    }
+    .text h3{
+        font-size:14px;
+        font-weight:600;
+        color:#FFF;
+        font-family:'bell_mtbold'
+    }
+}
+@media(max-width: 500px){
+    .course .texthead h3{
+        font-size:44px
+    }
+    .abouttext h4{
+        font-size:44px;
+        font-family:'bell_mtbold';
+        color:#000;
+        margin-bottom:20px;
+        font-size:44px;
+        font-family:bell_mtbold;
+        color:#000;
+        margin-bottom:20px
+    }
+    .qnatext h4{
+        font-size:44px;
+        font-family:'bell_mtbold';
+        color:#000;
+        margin-bottom:20px
+    }
+    .testitext h3{
+        font-size:44px;
+        font-family:'bell_mtbold';
+        color:#000;
+        margin-bottom:20px;
+        font-size:44px;
+        font-family:bell_mtbold;
+        color:#000;
+        margin-bottom:20px
+    }
+    .termscondi{
+        display:flex;
+        justify-content:center;
+        align-items:center
+    }
+    .business .tyt .textser h4{
+        border-bottom:5px solid #0001;
+        border-width:1px
+    }
+    .banner_btn .play{
+        padding:0;
+        text-decoration:none;
+        color:#000;
+        font-size:8px;
+        line-height:2
+    }
+    .banner_btn .play i{
+        font-size:14px;
+        height:69px;
+        width:60px;
+        border-radius:50%
+    }
+    .vtn .stars{
+        color:#FFC700;
+        font-size:16px
+    }
+    .text{
+        color:#fff;
+        font-size:20px;
+        position:absolute;
+        top:20%;
+        left:86%;
+        -webkit-transform:translate(-100%,-50%);
+        -ms-transform:translate(-100%,-50%);
+        transform:translate(-85%,50%);
+        white-space:nowrap
+    }
+}
